@@ -1,6 +1,6 @@
 /* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+article, aside, details, figcaption, figure,footer, header, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
@@ -149,6 +149,31 @@ body{
 	display: block;
 	text-transform: uppercase;
 }
+/*下拉菜单css*/
+.nav ul li ul{
+	display: none;
+}
+
+.nav ul li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+.nav ul li:hover ul li a{
+	display: block;
+	background: chartreuse;
+	color: brown;
+	width: 110px;
+	text-align: center;
+	border-bottom: 1px solid darkorange;
+	border-right: none;
+}
+
+.nav ul li:hover ul li a:hover{
+	background: coral;
+	color: brown;
+}
+/*下拉菜单css*/
 .top{
 	background:#313232;
 	height:80px;
@@ -360,7 +385,7 @@ body{
 	text-align:center;
 	font-size: 0.875em;
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	height:85px;
+	height:95px;
 }
 .footer ul{
 	padding:20px 0;
@@ -379,6 +404,10 @@ body{
 }
 .footer ul li a:hover{
 	color:#FFF;
+}
+
+.footer p{
+	color: #FFFFFF;
 }
 /*---start-copy-right-----*/
 .copy-right{
@@ -414,14 +443,14 @@ body{
 }
 /*---start-about----*/
 .banner{
-	z-index: 
+	z-index: 0;
 }
 .top-head{
 	margin-top: -300px;
 }
 .about-left{
 	width:70%;
-	float:left;
+	float:right;
 }
 .about-left span{
 	font-family: Arial, sans-serif;
@@ -437,6 +466,15 @@ body{
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
+
+.about-left ul li{
+	color: #313232;
+	margin: 20px 0 0 40px;
+	font-size: 1.3em;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
 .about-left p{
 	font-family: Arial, sans-serif;
 	color: #777;
@@ -448,45 +486,12 @@ body{
 }
 .about {
 	margin-top: 2em;
-}
-/*----about-histore----*/
-.about-histore{
-	border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
-}
-.about-histore h3{
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 15px 0px 15px 0px;
-	margin-bottom: 13px;
-	color: #313232;
-	font-size: 1.5em;
-	text-transform: uppercase;
-}
-.about-histore ul li span{
-	color: #777;
-	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	padding: 10px 20px;
-	margin-bottom: 13px;
-	float: left;
-	background: #EEE;
-}
-.about-histore ul li p{
-	font-size: 0.8125em;
-	color: #777;
-	line-height: 1.5em;
-	font-family: Arial, sans-serif;
-	padding: 0px 0px 20px 0px;
-	float: right;
-	width: 91%;
-	border:none;
-}
-.about-histore ul li p label{
-	color:#D63B37;
-	display:block;
+	min-height: 430px;
 }
 .about-sidebar{
-	float:right;
-	width:28%;
+	float:left;
+	margin-left: 12%;
+	width:16%;
 }
 .about-sidebar h3{
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

@@ -1,0 +1,28 @@
+*{margin: 0px; padding: 0px;}
+.body {
+    padding:0 0 10px;
+    z-index:100;
+    background: gray;
+}
+.body .collections div {
+    margin:0 auto;
+    padding:20px 39px 20px 39px;
+    width:890px;
+    background: gray;
+}
+.body .collections div ul {
+    margin:4px 0 0;
+    overflow:hidden;
+    width:890px;
+}
+.body .collections div ul li {
+    float:left;
+    margin:0 0 0 4px;
+}
+.body .collections div ul li a {
+    display:block;
+    width:287px;
+}
+.body .collections div ul li a img {
+    border:1px solid #fff;
+}
