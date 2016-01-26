@@ -452,6 +452,7 @@ body{
 	width:70%;
 	float:right;
 }
+
 .about-left span{
 	font-family: Arial, sans-serif;
 	color: #D63B37;
@@ -472,7 +473,7 @@ body{
 	margin: 20px 0 0 40px;
 	font-size: 1.3em;
 	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	text-transform: none;
 }
 
 .about-left p{
