@@ -1,0 +1,50 @@
+/*Top Logo and contact info*/
+.sd_top{
+    height:80px;
+    background: #354466;
+}
+.sd_logo{
+    float:left;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.sd_contact{
+    float:right;
+    padding:15px 15% 0px 0px;
+    font-weight: normal;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+.sd_contact p{
+    padding: 5px 0px 0px 0px;
+}
+/*Navi Bar*/
+.sd_navi{
+    background: #000;
+    border-bottom: solid 5px #D63B37;
+}
+.sd_navi_content{
+    text-align:center;
+    height:56px;
+}
+
+.sd_navi_content ul li{
+    display: inline-block;
+}
+
+.sd_navi_content ul li a{
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.875em;
+    color: #FFF;
+    display: block;
+    padding: 20px;
+    width: 130px;
+}
+
+.sd_navi_content ul li a:hover{
+    background: #D63B37;
+}
+
+.sd_navi_content ul li ul{
+    display: none;
+}
