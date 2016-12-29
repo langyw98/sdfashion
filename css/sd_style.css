@@ -1,3 +1,33 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration: none;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body{
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*Top Logo and contact info*/
 .sd_top{
     height:80px;
@@ -47,4 +77,68 @@
 
 .sd_navi_content ul li ul{
     display: none;
+}
+
+.sd_navi_content ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 130px;
+    z-index: 1000;
+}
+
+.sd_navi_content ul li:hover ul li a{
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: black;
+    color: #FFF;
+    font-size: 0.875em;
+    border-bottom: none;
+}
+
+.sd_navi_content ul li:hover ul li a:hover{
+    background: #D63B37;
+}
+
+/*Banner*/
+.sd_banner_background{
+    background: #191A1A;
+    z-index: 999;
+}
+
+.sd_banner{
+     width: 80%;
+     margin-left: 10%;
+     height: 550px;
+     position: relative;
+ }
+
+.sd_banner ul{
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    right:3px;
+}
+
+.sd_banner ul li{
+    display: block;;
+    float: left;
+    width: 70px;
+    position: relative;
+    height: 50px;
+}
+
+.sd_banner ul li img{
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    border-right: #fff 1px solid;
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+    border-left: #fff 1px solid;
+    left: 10px;
+    top: 5px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#sd_banner_content{
 }
