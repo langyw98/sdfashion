@@ -98,18 +98,49 @@ body{
     background: #D63B37;
 }
 
-/*Banner*/
+/*footer*/
+.sd_footer{
+    background:#313232;
+    font-size: 0.875em;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sd_footer ul{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.sd_footer ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.sd_footer ul li a{
+    color:#696968;
+}
+
+.sd_footer ul li a:hover{
+    color:#FFF;
+}
+
+.sd_footer p{
+    text-align: center;
+    color: #fff;
+}
+
+
+/*Index page Banner*/
 .sd_banner_background{
     background: #191A1A;
     z-index: 999;
 }
 
 .sd_banner{
-     width: 80%;
-     margin-left: 10%;
-     height: 550px;
-     position: relative;
- }
+    width: 80%;
+    margin-left: 10%;
+    height: 550px;
+    position: relative;
+}
 
 .sd_banner ul{
     position: absolute;
@@ -139,6 +170,23 @@ body{
     opacity: 0.6;
     cursor: pointer;
 }
+/*collection page*/
+.sd_collections{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: gray;
+}
 
-#sd_banner_content{
+.sd_collections ul{
+    text-align: center;
+}
+
+.sd_collections ul li{
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.sd_collections ul li img{
+    width: 287px;
+    border: solid #fff 1px;
 }
